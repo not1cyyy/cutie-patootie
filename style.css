@@ -1,0 +1,182 @@
+:root {
+	--ColorI: #FFFFFF;
+	--ColorII: #FFCCFF;
+	--ColorIII: #FF33CC;
+	--ColorIV: #990033;
+	--ColorV: #9900CC;
+}
+
+.fillNone {
+	fill: none;
+}
+
+.fillWhite {
+	fill: var(--ColorI);
+}
+
+.fillColA {
+	fill: var(--ColorII);
+}
+
+.fillColB {
+	fill: var(--ColorIII);
+}
+
+.fillColC {
+	fill: var(--ColorIV);
+}
+
+.fillColD {
+	fill: var(--ColorV);
+}
+
+.stkWhite {
+	stroke: var(--ColorI);
+}
+
+.stkColA {
+	stroke: var(--ColorII);
+}
+
+.stkColB {
+	stroke: var(--ColorIII);
+}
+
+.stkColC {
+	stroke: var(--ColorIV);
+}
+
+.stkColD {
+	stroke: var(--ColorV);
+}
+
+.stk4 {
+	stroke-width: 4;
+}
+
+.stk5 {
+	stroke-width: 5;
+}
+
+.stk6 {
+	stroke-width: 6;
+}
+
+.stk10 {
+	stroke-width: 10;
+}
+
+.stk12 {
+	stroke-width: 12;
+}
+
+
+svg {
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	stroke-miterlimit: 10;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(120%);
+}
+
+#Direction {
+	transform-origin: 500px 500px;
+	transform: rotate(60deg);
+}
+
+#Vuelo {
+	animation: AnimaVuelo 1s infinite ease-in-out;
+}
+
+@keyframes AnimaVuelo {
+	0% {
+		transform: translate(0, 0px);
+	}
+
+	50% {
+		transform: translate(0, -30px);
+	}
+
+	100% {
+		transform: translate(0, 0px);
+	}
+}
+
+#Flama {
+	transform-origin: 505.6281px 655.3718px;
+	animation: AnimaFire 1s infinite ease-in-out;
+}
+
+@keyframes AnimaFire {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.2);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+#Michi {
+	animation: Asomando 1s infinite ease-in-out;
+}
+
+@keyframes Asomando {
+	0% {
+		transform: translate(0, -7px);
+	}
+
+	25% {
+		transform: translate(-7, 0px);
+	}
+
+	50% {
+		transform: translate(0, 7px);
+	}
+
+	75% {
+		transform: translate(7, 0px);
+	}
+
+	100% {
+		transform: translate(0, -7px);
+	}
+}
+
+#StarA {
+	animation: AnimaEstrella 2s infinite ease-in-out;
+}
+
+#StarB {
+	animation: AnimaEstrella 1.5s infinite ease-in-out;
+}
+
+#StarC {
+	animation: AnimaEstrella 3s infinite ease-in-out;
+}
+
+#StarD {
+	animation: AnimaEstrella 2.5s infinite ease-in-out;
+}
+
+@keyframes AnimaEstrella {
+	0% {
+		transform: translate(0, 0px);
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		transform: translate(0, 500px);
+		opacity: 0;
+	}
+}
