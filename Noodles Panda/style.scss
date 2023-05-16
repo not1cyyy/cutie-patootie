@@ -1,0 +1,22 @@
+body {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.panda {
+  max-width: 900px;
+}
+
+.dribble {
+  font-size: 25px;
+  font-family: Inconsolata, monospace;
+
+  p {
+    color: #393439;
+
+    a {
+      color: #9bb554 * .8;
+    }
+  }
+}
